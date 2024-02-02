@@ -13,6 +13,7 @@ export default defineNuxtConfig({
         "@nuxtjs/color-mode",
         "@nuxtjs/i18n",
         "nuxt-particles",
+        "@nuxt/test-utils/module",
         [
             "@nuxtjs/eslint-module",
             {
