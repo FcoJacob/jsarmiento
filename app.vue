@@ -92,11 +92,9 @@ const languageEmojis = {
 
 <template>
     <NuxtParticles id="particles" :options="options" @load="onLoad" />
-    <div class="w-screen h-screen relative z-0">
+    <div class="relative z-0 h-screen w-screen">
         <div class="navbar bg-base-100">
-            <div class="flex-1">
-                <a class="btn btn-ghost text-xl">JSarmiento</a>
-            </div>
+            <div class="flex-1">JSarmiento</div>
             <div class="flex-none gap-2">
                 <form>
                     <select v-model="locale" class="select">
@@ -120,7 +118,7 @@ const languageEmojis = {
             </div>
         </div>
         <div
-            class="w-full h-[calc(100%-64px)] flex flex-col justify-center items-center"
+            class="flex h-[calc(100%-64px)] w-full flex-col items-center justify-center"
         >
             <h1 class="text-4xl dark:text-white">
                 {{ $t("welcome") }}
