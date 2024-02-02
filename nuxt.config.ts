@@ -9,8 +9,12 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-      '@nuxtjs/tailwindcss',
-      '@nuxtjs/color-mode'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    ['@nuxtjs/eslint-module', {
+      include: ['/**/*.{js,jsx,ts,tsx,vue}'],
+      lintOnStart: false
+    }]
   ],
   colorMode: {
     preference: 'system',
