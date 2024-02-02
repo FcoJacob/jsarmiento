@@ -32,6 +32,12 @@ const themes = [
     "coffee",
     "winter",
 ];
+const { locale } = useI18n();
+const languageEmojis = {
+    es: "🇪🇸",
+    en: "🇬🇧",
+    fr: "🇫🇷",
+};
 </script>
 
 <template>
@@ -40,7 +46,17 @@ const themes = [
             <div class="flex-1">
                 <a class="btn btn-ghost text-xl">JSarmiento</a>
             </div>
-            <div class="flex-none">
+            <div class="flex-none gap-2">
+                <form>
+                    <select v-model="locale" class="select">
+                        <option
+                            v-for="(emoji, lang) in languageEmojis"
+                            :value="lang"
+                        >
+                            {{ emoji }}
+                        </option>
+                    </select>
+                </form>
                 <select
                     v-model="colorMode.preference"
                     class="select w-full max-w-xs"
@@ -70,7 +86,9 @@ const themes = [
         <div
             class="bg-base-200 w-full h-[calc(100%-64px)] flex flex-col justify-center items-center"
         >
-            <h1 class="text-4xl dark:text-white">Hello world!</h1>
+            <h1 class="text-4xl dark:text-white">
+                {{ $t("welcome") }}
+            </h1>
             <div class="bg-base-200 py-10">
                 <div class="text-center">
                     <div class="max-w-md">
