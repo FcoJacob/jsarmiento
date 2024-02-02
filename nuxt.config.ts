@@ -13,6 +13,8 @@ export default defineNuxtConfig({
       '@nuxtjs/color-mode'
   ],
   colorMode: {
+    preference: 'system',
+    dataValue: 'theme',
     classSuffix: ''
   }
 })

@@ -9,8 +9,8 @@ module.exports = {
         "./app.vue",
         "./error.vue",
     ],
-    theme: {
-        extend: {},
-    },
-    plugins: [],
+    plugins: [require('daisyui')],
+    daisyui: {
+        themes: true
+    }
 }
