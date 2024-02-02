@@ -1,4 +1,54 @@
-<script setup>
+<script setup lang="ts">
+import type { Container } from "tsparticles-engine";
+
+const options = {
+    background: {
+        color: "transparent",
+    },
+    zIndex: {
+        value: -1,
+    },
+    particles: {
+        color: { value: "#000" },
+        move: {
+            direction: "bottom",
+            enable: true,
+            outModes: "out",
+            speed: 1,
+        },
+        number: {
+            density: {
+                enable: true,
+                area: 1000,
+            },
+            value: 40,
+        },
+        opacity: {
+            value: 0.4,
+        },
+        shape: {
+            type: "circle",
+        },
+        size: {
+            value: {
+                min: 3,
+                max: 8,
+            },
+        },
+        wobble: {
+            enable: true,
+            distance: 5,
+            speed: 6,
+        },
+    },
+};
+
+const onLoad = (container: Container) => {
+    // Do something with the container
+    container.pause();
+    setTimeout(() => container.play(), 1000);
+};
+
 const colorMode = useColorMode();
 const themes = [
     "system",
@@ -41,7 +91,8 @@ const languageEmojis = {
 </script>
 
 <template>
-    <div class="w-screen h-screen">
+    <NuxtParticles id="particles" :options="options" @load="onLoad" />
+    <div class="w-screen h-screen relative z-0">
         <div class="navbar bg-base-100">
             <div class="flex-1">
                 <a class="btn btn-ghost text-xl">JSarmiento</a>
@@ -84,12 +135,12 @@ const languageEmojis = {
             </div>
         </div>
         <div
-            class="bg-base-200 w-full h-[calc(100%-64px)] flex flex-col justify-center items-center"
+            class="w-full h-[calc(100%-64px)] flex flex-col justify-center items-center"
         >
             <h1 class="text-4xl dark:text-white">
                 {{ $t("welcome") }}
             </h1>
-            <div class="bg-base-200 py-10">
+            <div class="py-10">
                 <div class="text-center">
                     <div class="max-w-md">
                         <button class="btn btn-primary">Get Started</button>
