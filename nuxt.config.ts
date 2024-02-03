@@ -28,10 +28,15 @@ export default defineNuxtConfig({
         classSuffix: "",
     },
     i18n: {
-        vueI18n: "./i18n.config.ts", // if you are using custom path, default
+        vueI18n: "./i18n.config.ts",
     },
     particles: {
         mode: "full",
         lazy: true,
+    },
+    nitro: {
+        prerender: {
+            failOnError: false,
+        },
     },
 });
