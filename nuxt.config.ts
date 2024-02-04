@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         buildAssetsDir: development ? "/_nuxt/" : "assets",
     },
     experimental: {
-        payloadExtraction: false,
+        payloadExtraction: true,
     },
     devtools: { enabled: true },
     css: ["~/assets/css/tailwindcss.css"],
