@@ -94,12 +94,13 @@ const languageEmojis = {
     <NuxtParticles id="particles" :options="options" @load="onLoad" />
     <div class="relative z-0 h-screen w-screen">
         <div class="navbar bg-base-100">
-            <div class="flex-1">JSarmiento</div>
+            <div class="flex-1 text-lg font-bold">JSarmiento</div>
             <div class="flex-none gap-2">
                 <form>
                     <select v-model="locale" class="select">
                         <option
                             v-for="(emoji, lang) in languageEmojis"
+                            :key="lang"
                             :value="lang"
                         >
                             {{ emoji }}

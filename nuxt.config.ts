@@ -1,5 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+const development = process.env.NODE_ENV !== "production";
+
 export default defineNuxtConfig({
+    app: {
+        baseURL: development ? "/" : "/jsarmiento/",
+        buildAssetsDir: development ? "/_nuxt/" : "assets",
+    },
     devtools: { enabled: true },
     css: ["~/assets/css/tailwindcss.css"],
     postcss: {
