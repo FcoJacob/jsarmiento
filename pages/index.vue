@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Container } from "tsparticles-engine";
+import ProfileCard from "~/components/UI/ProfileCard/ProfileCard.vue";
 
 const { t } = useI18n();
 const title = computed(() => `${t("home.titlePage")} 👨‍💻`);
@@ -66,16 +67,7 @@ const onLoad = (container: Container) => {
             <div
                 class="flex h-[calc(100%-64px)] w-full flex-col items-center justify-center"
             >
-                <h1 class="text-4xl dark:text-white">
-                    {{ $t("home.titlePage") }}
-                </h1>
-                <div class="py-10">
-                    <div class="text-center">
-                        <div class="max-w-md">
-                            <button class="btn btn-primary">Get Started</button>
-                        </div>
-                    </div>
-                </div>
+                <profile-card />
             </div>
         </div>
     </div>

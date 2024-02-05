@@ -1,6 +1,7 @@
 {
 	"home": {
-		"titlePage": "Welcome!"
+		"titlePage": "Welcome!",
+		"jobPosition": "Software Developer"
 	},
 	"ui": {
 		"ariaLabels": {
