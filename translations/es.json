@@ -1,0 +1,11 @@
+{
+	"home": {
+		"titlePage": "Bienvenido!"
+	},
+	"ui": {
+		"ariaLabels": {
+			"changeLanguage": "Cambiar idioma",
+			"changeTheme": "Cambiar tema"
+		}
+	}
+}
