@@ -14,7 +14,7 @@ import ChangeLanguage from "~/components/UI/ChangeLanguage/ChangeLanguage.vue";
                 class="inline-block w-8"
             />
         </div>
-        <div class="flex-none gap-2">
+        <div class="flex-none">
             <change-theme />
             <change-language />
         </div>
