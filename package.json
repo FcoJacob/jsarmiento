@@ -10,9 +10,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint . --fix",
     "test": "vitest",
-    "test:coverage": "vitest run --coverage",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",
