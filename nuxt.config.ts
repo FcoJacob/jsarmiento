@@ -4,7 +4,7 @@ const development = process.env.NODE_ENV !== "production";
 
 export default defineNuxtConfig({
     app: {
-        baseURL: development ? "/" : "/",
+        baseURL: development ? "/" : "/jsarmiento/",
         buildAssetsDir: development ? "/_nuxt/" : "assets",
     },
     experimental: {
