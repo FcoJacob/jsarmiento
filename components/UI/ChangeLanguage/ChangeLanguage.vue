@@ -54,7 +54,7 @@ const languageEmojis = {
                             class="flex w-full flex-row items-start justify-start"
                         >
                             <div
-                                class="badge badge-outline badge-sm !pl-1.5 !pr-1 pt-px font-mono !text-[.6rem] font-bold tracking-widest opacity-50"
+                                class="badge badge-outline badge-sm flex items-center justify-center font-mono font-bold tracking-widest opacity-50"
                             >
                                 {{ language.emoji }}
                             </div>
