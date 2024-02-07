@@ -3,7 +3,7 @@ const active = ref("home");
 </script>
 
 <template>
-    <div class="btm-nav absolute bottom-0 left-0 z-10 bg-base-100">
+    <div class="btm-nav z-10 bg-base-100">
         <button
             class="text-primary"
             :disabled="false"

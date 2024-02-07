@@ -12,7 +12,7 @@ useHead({
     },
 });
 
-const options = {
+const options = ref({
     background: {
         color: "transparent",
     },
@@ -20,7 +20,7 @@ const options = {
         value: -1,
     },
     particles: {
-        color: { value: "#000" },
+        color: { value: "#939387" },
         move: {
             direction: "top",
             enable: true,
@@ -52,11 +52,11 @@ const options = {
             speed: 6,
         },
     },
-};
+});
 
 const onLoad = (container: Container) => {
     container.pause();
-    setTimeout(() => container.play(), 1000);
+    setTimeout(() => container.play(), 500);
 };
 </script>
 
