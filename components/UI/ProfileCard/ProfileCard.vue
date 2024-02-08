@@ -37,13 +37,11 @@ import AvatarProfile from "~/components/UI/ProfileCard/AvatarProfile.vue";
 .text-brillo {
     background: linear-gradient(
         90deg,
-        #ff0000,
-        #ffff00,
-        #00ff00,
-        #00ffff,
-        #0000ff,
-        #ff00ff,
-        #ff0000
+        #c9c8c8,
+        #939393,
+        #565656,
+        #939393,
+        #c9c8c8
     );
     background-size: 200% auto;
     color: #fff;
@@ -51,8 +49,6 @@ import AvatarProfile from "~/components/UI/ProfileCard/AvatarProfile.vue";
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px oklch(var(--bc));
-    text-stroke: 1px oklch(var(--bc));
     animation: shine 5s linear infinite;
 }
 
