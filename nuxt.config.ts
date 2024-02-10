@@ -6,6 +6,10 @@ export default defineNuxtConfig({
     app: {
         baseURL: development ? "/" : "/jsarmiento/",
         buildAssetsDir: development ? "/_nuxt/" : "assets",
+        pageTransition: {
+            name: "page",
+            mode: "out-in", // default
+        },
     },
     experimental: {
         payloadExtraction: false,

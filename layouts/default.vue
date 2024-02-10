@@ -1,10 +1,59 @@
 <script setup lang="ts">
+import type { Container } from "tsparticles-engine";
 import NavBar from "~/components/UI/NavBar/NavBar.vue";
 import BottomNav from "~/components/UI/BottomNav/BottomNav.vue";
+
+const options = ref({
+    background: {
+        color: "transparent",
+    },
+    zIndex: {
+        value: -1,
+    },
+    particles: {
+        color: { value: "#939387" },
+        move: {
+            direction: "top",
+            enable: true,
+            outModes: "out",
+            speed: 2,
+        },
+        number: {
+            density: {
+                enable: true,
+                area: 1000,
+            },
+            value: 40,
+        },
+        opacity: {
+            value: 0.4,
+        },
+        shape: {
+            type: "circle",
+        },
+        size: {
+            value: {
+                min: 3,
+                max: 8,
+            },
+        },
+        wobble: {
+            enable: true,
+            distance: 5,
+            speed: 6,
+        },
+    },
+});
+
+const onLoad = (container: Container) => {
+    container.pause();
+    setTimeout(() => container.play(), 500);
+};
 </script>
 
 <template>
     <div class="relative h-dvh w-dvw overflow-hidden">
+        <NuxtParticles id="particles" :options="options" @load="onLoad" />
         <div class="hide-in-landscape h-full w-full">
             <nav-bar />
             <slot />
