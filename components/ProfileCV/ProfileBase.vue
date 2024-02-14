@@ -23,24 +23,24 @@ const profiles = computed<Profile[]>(() =>
 
 <template>
     <section class="flex w-full items-start justify-start">
-        <article class="flex w-8/12 flex-col gap-2 text-base-content">
-            <h1 class="text-pretty text-2xl font-bold">
+        <article class="flex w-full flex-col gap-2 text-base-content sm:w-8/12">
+            <h1>
                 {{ $t("curriculumResume.basics.name") }}
             </h1>
-            <p class="flex flex-col text-pretty text-xl font-semibold">
-                {{ $t("curriculumResume.basics.label") }}
-                <span class="text-sm font-normal">
+            <div class="flex flex-col">
+                <h3>{{ $t("curriculumResume.basics.label") }}</h3>
+                <span>
                     {{ $t("curriculumResume.basics.location.address") }},
                     {{ $t("curriculumResume.basics.location.city") }},
                     {{ $t("curriculumResume.basics.location.region") }}
                 </span>
-            </p>
+            </div>
             <span class="mt-2 flex w-full items-start justify-start gap-1.5">
                 <a
                     :href="`mailto:${$t('curriculumResume.basics.email')}@gmail.com`"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="flex h-8 w-8 items-center justify-center gap-1 overflow-hidden rounded-md border border-solid border-base-content p-1 transition-all duration-300 ease-in-out hover:bg-base-content hover:text-base-100"
+                    class="icon-design"
                 >
                     <mail-icon />
                 </a>
@@ -48,7 +48,7 @@ const profiles = computed<Profile[]>(() =>
                     :href="`tel:${$t('curriculumResume.basics.phone')}`"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="flex h-8 w-8 items-center justify-center gap-1 overflow-hidden rounded-md border border-solid border-base-content p-1 transition-all duration-300 ease-in-out hover:bg-base-content hover:text-base-100"
+                    class="icon-design"
                 >
                     <phone-icon />
                 </a>
@@ -58,7 +58,7 @@ const profiles = computed<Profile[]>(() =>
                             :href="`${$t('curriculumResume.basics.profiles[0].url')}`"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="flex h-8 w-8 items-center justify-center gap-1 overflow-hidden rounded-md border border-solid border-base-content p-1 transition-all duration-300 ease-in-out hover:bg-base-content hover:text-base-100"
+                            class="icon-design"
                         >
                             <x-icon v-if="profile.network === 'Twitter'" />
                             <github-icon v-if="profile.network === 'Github'" />
@@ -73,7 +73,7 @@ const profiles = computed<Profile[]>(() =>
                 </template>
             </span>
         </article>
-        <figure class="flex w-4/12 items-center justify-center">
+        <figure class="hidden w-4/12 items-center justify-center sm:flex">
             <img
                 src="~/assets/img/JacobHD.png"
                 alt="Jacob Sarmiento"
@@ -81,16 +81,20 @@ const profiles = computed<Profile[]>(() =>
             />
         </figure>
     </section>
-    <section class="mt-8 flex w-full items-start justify-start">
-        <article class="flex w-full flex-col gap-2 text-base-content">
-            <h2 class="text-xl font-bold">
+    <section class="flex w-full items-start justify-start">
+        <article class="flex w-full flex-col gap-2">
+            <h1>
                 {{ $t("glossary.about") }}
-            </h2>
-            <p class="text-balance text-base-content">
+            </h1>
+            <p>
                 {{ $t("curriculumResume.basics.summary") }}
             </p>
         </article>
     </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+.icon-design {
+    @apply flex h-8 w-8 items-center justify-center gap-1 overflow-hidden rounded-md border border-solid border-base-content p-1 transition-all duration-300 ease-in-out hover:bg-base-content hover:text-base-100;
+}
+</style>

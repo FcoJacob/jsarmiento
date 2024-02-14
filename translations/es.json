@@ -1,6 +1,10 @@
 {
 	"glossary": {
-		"about": "Sobre mi"
+		"about": "Sobre mi",
+		"workExperience": "Experiencia Laboral",
+		"education": "Educación",
+		"skills": "Habilidades",
+		"projects": "Proyectos"
 	},
 	"home": {
 		"titlePage": "Bienvenido!",
@@ -55,6 +59,7 @@
 			{
 				"name": "AIDA",
 				"position": "Desarrollador de software",
+				"location": "Remote",
 				"url": "https://www.domingoalonsogroup.com/es/empresas/aida",
 				"startDate": "2020-03-06",
 				"endDate": "Actualmente",
@@ -66,6 +71,7 @@
 			{
 				"name": "Progrentis",
 				"position": "Desarrollador de software",
+				"location": "Remote",
 				"url": "https://www.progrentis.com/",
 				"startDate": "2020-07-01",
 				"endDate": "2024-02-01",
@@ -77,6 +83,7 @@
 			{
 				"name": "Freelance",
 				"position": "Desarrollador de software",
+				"location": "Remote",
 				"url": "--",
 				"startDate": "2017-06-25",
 				"endDate": "2024-05-01",
@@ -86,8 +93,9 @@
 				]
 			},
 			{
-				"name": "Ejercito del Aire y del espacio, Español",
+				"name": "Ejercito del Aire",
 				"position": "Especialista en Mantenimiento de Aeronaves",
+				"location": "Local",
 				"url": "https://ejercitodelaire.defensa.gob.es/EA/ejercitodelaire/es/",
 				"startDate": "2007-12-10",
 				"endDate": "Excedencia",
@@ -99,17 +107,19 @@
 			{
 				"name": "Armada Española",
 				"position": "Especialista en Maniobra y Navegación",
+				"location": "Local",
 				"url": "https://armada.defensa.gob.es/ArmadaPortal/page/Portal/ArmadaEspannola/iniciohome/prefLang-es/",
 				"startDate": "2004-12-10",
 				"endDate": "2006-12-10",
-				"summary": "Especialista Maniobra y Navegación con mas de 260 horas de mar, y campañas de control de pesca, defensa de aguas nacionales y servicios de marinero de puente, se manejar zodiac con motor de turbina y realizar maniobras en alta mar con helicópteros, de salvamento o carga de paquetes.",
+				"summary": "Más de 260 horas de mar, y campañas de control de pesca, defensa de aguas nacionales y servicios de marinero de puente, se manejar zodiac con motor de turbina y realizar maniobras en alta mar con helicópteros, de salvamento o carga de paquetes.",
 				"highlights": [
 					"Started the company"
 				]
 			},
 			{
-				"name": "Ejercito de Tierra, Español",
+				"name": "Ejercito de Tierra",
 				"position": "Infantería",
+				"location": "Local",
 				"url": "https://ejercito.defensa.gob.es/",
 				"startDate": "2000-12-10",
 				"endDate": "2004-08-01",
@@ -182,9 +192,19 @@
 					"HTML",
 					"CSS",
 					"JavaScript",
-					"Vue",
-					"NuxtJs",
-					"Node"
+					"TypeScript",
+					"Vue/Nuxt",
+					"Node.js",
+					"Vitest/Testing library/Jest",
+					"Axios/Fetch",
+					"Firebase",
+					"TailwindCSS",
+					"Figma",
+					"Design System",
+					"Atomic Design",
+					"Git",
+					"GitHub",
+					"Phaser"
 				]
 			}
 		],
@@ -250,7 +270,29 @@
 				"startDate": "2020-01-01",
 				"endDate": "Actualmente",
 				"description": "Pagina web de la isla DO de El Hierro, con información de las bodegas que se pueden encontrar en la isla.",
-				"highlights": [],
+				"highlights": [
+					"Vue"
+				],
+				"url": "https://doelhierro.es/"
+			},
+			{
+				"name": "La Jaira de Ana",
+				"startDate": "2020-01-01",
+				"endDate": "Proyecto cerrado",
+				"description": "Portal web, La Jaira de Ana es un lugar donde conectar a la familia con la naturaleza, cuidando nuestros recursos y la biodiversidad.",
+				"highlights": [
+					"Vue"
+				],
+				"url": "https://doelhierro.es/"
+			},
+			{
+				"name": "Foro eBC",
+				"startDate": "2020-01-01",
+				"endDate": "Actualmente",
+				"description": "Web para establecer un punto de encuentro periódico en el que se promueven nuevos ámbitos y competencias profesionales, con las que abordar los diferentes nichos de empleabilidad y negocios que se generan en torno a las TICs y otras tecnologías emergentes.",
+				"highlights": [
+					"Vue"
+				],
 				"url": "https://doelhierro.es/"
 			}
 		]

@@ -75,13 +75,13 @@ const onLoad = (container: Container) => {
 </template>
 
 <style scoped>
-@media screen and (orientation: landscape) and (hover: none) {
+@media screen and (max-height: 740px) and (orientation: landscape) and (hover: none) {
     .hide-in-landscape {
         display: none;
     }
 }
 
-@media screen and (orientation: portrait) and (hover: none) {
+@media screen and (max-height: 740px) and (orientation: portrait) and (hover: none) {
     .show-in-portrait {
         display: block;
     }
