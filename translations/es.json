@@ -61,11 +61,16 @@
 				"position": "Desarrollador de software",
 				"location": "Remote",
 				"url": "https://www.domingoalonsogroup.com/es/empresas/aida",
-				"startDate": "2020-03-06",
+				"startDate": "2023-03-06",
 				"endDate": "Actualmente",
 				"summary": "Desarrollador en el equipo de frontend, con tecnologías como Vue, entre otras.",
 				"highlights": [
-					"Started the company"
+					"Vue",
+					"Vuetify",
+					"TailwindCSS",
+					"Azure cloud",
+					"Figma",
+					"Storybook"
 				]
 			},
 			{
@@ -77,7 +82,10 @@
 				"endDate": "2024-02-01",
 				"summary": "Desarrollo de aplicaciones web, con tecnologías como Vue, Node, entre otras.",
 				"highlights": [
-					"Started the company"
+					"Vue",
+					"TailwindCSS",
+					"Figma",
+					"Phaser"
 				]
 			},
 			{
@@ -85,7 +93,7 @@
 				"position": "Desarrollador de software",
 				"location": "Remote",
 				"url": "--",
-				"startDate": "2017-06-25",
+				"startDate": "2018-06-25",
 				"endDate": "2024-05-01",
 				"summary": "Desarrollo de aplicaciones web y móviles, con tecnologías como NuxtJs, Vue, Node, Express, Firebase, entre otras.",
 				"highlights": [
@@ -187,7 +195,7 @@
 		"skills": [
 			{
 				"name": "Web Development",
-				"level": "Master",
+				"level": "Middle/High",
 				"keywords": [
 					"HTML",
 					"CSS",
@@ -204,7 +212,15 @@
 					"Atomic Design",
 					"Git",
 					"GitHub",
-					"Phaser"
+					"Phaser",
+					"Jira",
+					"Storybook",
+					"Scrum",
+					"Kanban",
+					"Agile",
+					"CI/CD",
+					"Azure cloud",
+					"Google cloud"
 				]
 			}
 		],
@@ -266,34 +282,115 @@
 		],
 		"projects": [
 			{
-				"name": "DO EL Hierro",
-				"startDate": "2020-01-01",
-				"endDate": "Actualmente",
-				"description": "Pagina web de la isla DO de El Hierro, con información de las bodegas que se pueden encontrar en la isla.",
+				"name": "La Jaira de Ana",
+				"completionYear": "2020",
+				"state": "Transferido",
+				"description": "En La Jaira de Ana, nos propusieron revolucionar la apreciación del sector agropecuario en Canarias, creando un espacio que fusiona cultura, educación y sostenibilidad. Elegimos Nuxt2 por su capacidad de generar aplicaciones universales (SSR), Firebase para una gestión de datos en tiempo real sin esfuerzos, Vuetify para ofrecer una interfaz rica y accesible, y PWA para asegurar una experiencia de usuario excepcional, tanto online como offline. Este enfoque tecnológico nos permitió crear un portal interactivo que no solo promueve la importancia de la agricultura local, sino que también invita a participar activamente a través de talleres y experiencias inmersivas.",
 				"highlights": [
-					"Vue"
+					"Nuxt2",
+					"Firebase",
+					"Vuetify",
+					"PWA"
 				],
-				"url": "https://doelhierro.es/"
+				"url": "https://jairadeana.web.app/",
+				"urlImg": "/projects/lajairadeana.png"
 			},
 			{
-				"name": "La Jaira de Ana",
-				"startDate": "2020-01-01",
-				"endDate": "Proyecto cerrado",
-				"description": "Portal web, La Jaira de Ana es un lugar donde conectar a la familia con la naturaleza, cuidando nuestros recursos y la biodiversidad.",
+				"name": "DO EL Hierro",
+				"completionYear": "2020",
+				"state": "Activo",
+				"description": "DO EL Hierro representa un sello de excelencia para los vinos de nuestra región. Con el desafío de destacar la singularidad y calidad de nuestros vinos, nos decantamos por Nuxt2 para una experiencia de usuario fluida y SEO optimizado, Firebase para una base de datos segura y escalable, TailwindCSS para un diseño personalizado y adaptable, y PWA para accesibilidad offline y en dispositivos móviles. Esta combinación tecnológica nos ha permitido no solo presentar la denominación de origen con elegancia, sino también educar a nuestros visitantes sobre la rica herencia vinícola de El Hierro.",
 				"highlights": [
-					"Vue"
+					"Nuxt2",
+					"Firebase",
+					"TailwindCSS",
+					"PWA"
 				],
-				"url": "https://doelhierro.es/"
+				"url": "https://doelhierro.es/",
+				"urlImg": "/projects/doelhierro.png"
 			},
 			{
 				"name": "Foro eBC",
-				"startDate": "2020-01-01",
-				"endDate": "Actualmente",
-				"description": "Web para establecer un punto de encuentro periódico en el que se promueven nuevos ámbitos y competencias profesionales, con las que abordar los diferentes nichos de empleabilidad y negocios que se generan en torno a las TICs y otras tecnologías emergentes.",
+				"completionYear": "2018",
+				"state": "Activo",
+				"description": "El Foro eBC es la cúspide de la innovación en el sector de las TIC y tecnologías emergentes en Canarias. Optamos por Vue2 por su flexibilidad y facilidad de integración, Firebase para una solución backend completa sin complicaciones, y PWA para garantizar un acceso constante y eficaz. Esta infraestructura tecnológica nos facilitó crear un espacio interactivo donde profesionales y empresas pueden explorar oportunidades, compartir conocimientos y fomentar la economía digital de manera colaborativa y sostenible.",
 				"highlights": [
-					"Vue"
+					"Vue2",
+					"Firebase",
+					"PWA"
 				],
-				"url": "https://doelhierro.es/"
+				"url": "https://foroebc.org/",
+				"urlImg": "/projects/foroebc.png"
+			},
+			{
+				"name": "Torino autocasión",
+				"completionYear": "2019",
+				"state": "Suspendido",
+				"description": "En Torino Autocasión, transformamos la experiencia de compra de vehículos de ocasión. Utilizamos Vue2 y Vuetify para una interfaz intuitiva y estéticamente atractiva, Firebase para una gestión eficiente de inventarios y datos de clientes, y PWA para que nuestros usuarios accedan a nuestra plataforma en cualquier momento y lugar. Este enfoque nos permite ofrecer un servicio al cliente excepcional, con asesoramiento especializado y soporte post-venta, destacando nuestro compromiso con la calidad y la confianza.",
+				"highlights": [
+					"Vue2",
+					"Firebase",
+					"Vuetify",
+					"PWA"
+				],
+				"url": "https://torino-compra-ve-1551062535061.web.app/",
+				"urlImg": "/projects/torinoautocasion.png"
+			},
+			{
+				"name": "Business Evolver",
+				"completionYear": "2019",
+				"state": "Suspendido",
+				"description": "Business Evolver se dedica a empoderar organizaciones hacia la sostenibilidad. Adoptamos Vue2, Vuetify, y Firebase para desarrollar una plataforma robusta y estéticamente avanzada, complementada con PWA para maximizar la accesibilidad. Nuestro enfoque tecnológico nos permite alinear estratégicamente a las empresas con los Objetivos de Desarrollo Sostenible (ODS), promoviendo prácticas empresariales que benefician tanto a la sociedad como al medio ambiente.",
+				"highlights": [
+					"Vue2",
+					"Firebase",
+					"Vuetify",
+					"PWA"
+				],
+				"url": "https://business-evolver.web.app/",
+				"urlImg": "/projects/businessevolver.png"
+			},
+			{
+				"name": "Wave 2 EW",
+				"completionYear": "2019",
+				"state": "Transferido",
+				"description": "Wave 2 EW es un proyecto pionero para la sustitución de generadores diésel por soluciones de energía renovable y desalinización de agua. La elección de Vue2, Firebase, Vuetify, y PWA fue estratégica para desarrollar una plataforma que facilita la gestión y monitorización de proyectos a gran escala, promoviendo la adopción de energías renovables en comunidades aisladas y contribuyendo a un futuro más sostenible.",
+				"highlights": [
+					"Vue2",
+					"Firebase",
+					"Vuetify",
+					"PWA"
+				],
+				"url": "https://wave2ew.web.app/",
+				"urlImg": "/projects/wave2ew.png"
+			},
+			{
+				"name": "+QHuellas",
+				"completionYear": "2020",
+				"state": "Activo",
+				"description": "+QHuellas redefine la atención veterinaria, poniendo el bienestar animal al frente. Con Vue2, Vuetify, y Firebase, creamos una experiencia digital amigable y eficiente, mientras que PWA asegura la disponibilidad de nuestro servicio en cualquier momento. Este enfoque nos permite ofrecer cuidados veterinarios modernos y compasivos, enfocados en minimizar el estrés de nuestras mascotas y mejorar su calidad de vida.",
+				"highlights": [
+					"Vue2",
+					"Firebase",
+					"Vuetify",
+					"PWA"
+				],
+				"url": "https://masquehuellas.com/",
+				"urlImg": "/projects/mqhuellas.png"
+			},
+			{
+				"name": "Frutería Víntage",
+				"completionYear": "2019",
+				"state": "Suspendido",
+				"description": "Frutería Víntage es más que una tienda de frutas; es una experiencia de compra única que combina tradición y modernidad. Implementamos Vue2, Vuetify, y Firebase para ofrecer una experiencia de usuario excepcional, con PWA para garantizar el acceso sin interrupciones. Nuestra plataforma invita a los clientes a sumergirse en un viaje a través de los sabores y tradiciones locales, fortaleciendo la conexión con nuestra herencia agrícola.",
+				"highlights": [
+					"Vue2",
+					"Firebase",
+					"Vuetify",
+					"PWA"
+				],
+				"url": "https://fruteriavintage.web.app/",
+				"urlImg": "/projects/fruteriavintage.png"
 			}
 		]
 	}

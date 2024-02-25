@@ -4,10 +4,14 @@ import { Size } from "./types";
 type ChipProps = {
     text: string;
     size?: Size;
+    color?: string;
+    textColor?: string;
 };
 withDefaults(defineProps<ChipProps>(), {
     text: "Chip",
     size: Size.small,
+    color: "bg-neutral",
+    textColor: "text-neutral-content",
 });
 </script>
 
@@ -18,6 +22,8 @@ withDefaults(defineProps<ChipProps>(), {
             small: size === Size.small,
             medium: size === Size.medium,
             large: size === Size.large,
+            [color]: true,
+            [textColor]: true,
         }"
     >
         {{ text }}
@@ -30,14 +36,14 @@ withDefaults(defineProps<ChipProps>(), {
 }
 
 .small {
-    @apply h-6 bg-neutral-content px-2 py-1 text-xs text-neutral;
+    @apply h-6 px-2 py-1 text-xs;
 }
 
 .medium {
-    @apply h-8 bg-neutral px-3 py-1 text-sm text-neutral-content;
+    @apply h-8 px-3 py-1 text-sm;
 }
 
 .large {
-    @apply h-10 bg-neutral px-3 py-1 text-lg text-neutral-content;
+    @apply h-10 px-3 py-1 text-lg;
 }
 </style>

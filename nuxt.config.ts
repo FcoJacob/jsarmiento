@@ -35,6 +35,7 @@ export default defineNuxtConfig({
                 lintOnStart: false,
             },
         ],
+        "@nuxt/image",
     ],
     colorMode: {
         preference: "system",
@@ -47,6 +48,11 @@ export default defineNuxtConfig({
     particles: {
         mode: "full",
         lazy: true,
+    },
+    image: {
+        dir: "assets/img",
+        quality: 100,
+        format: ["webp"],
     },
     nitro: {
         prerender: {

@@ -1,67 +1,37 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
-import ChipBase from "~/components/UI/Chip/ChipBase.vue";
-import { Size } from "~/components/UI/Chip/types";
+import ProjectCard, {
+    type Project,
+} from "~/components/UI/ProjectCard/ProjectCard.vue";
 
 const { getLocaleMessage } = useI18n();
-
-type Project = {
-    name: string;
-    startDate: string;
-    endDate: string;
-    description: string;
-    url: string;
-    highlights: string[];
-};
 
 const projects = computed<Project[]>(() =>
     getLocaleMessage("es").curriculumResume.projects
         ? getLocaleMessage("es").curriculumResume.projects
         : [],
 );
+
+const formatCol2 = [1, 2, 5, 6];
 </script>
 
 <template>
     <section class="flex w-full items-start justify-start">
-        <article class="flex w-full flex-col gap-2 text-base-content">
+        <article class="flex w-full flex-col gap-2">
             <h1>{{ $t("glossary.projects") }}</h1>
             <div
-                class="mt-8 flex w-full flex-wrap content-start items-start justify-start gap-6"
+                class="auto-rows-1 mt-8 grid w-full grid-cols-1 gap-4 md:grid-cols-3"
             >
-                <template v-for="(project, index) in projects" :key="index">
-                    <div
-                        class="flex h-fit w-full flex-col rounded-xl border border-solid border-neutral p-6 lg:w-[22rem]"
-                    >
-                        <h2>
-                            {{ $t(`curriculumResume.projects[${index}].name`) }}
-                        </h2>
-                        <p class="mt-2">
-                            {{
-                                $t(
-                                    `curriculumResume.projects[${index}].description`,
-                                )
-                            }}
-                        </p>
-                        <div
-                            v-if="project.highlights.length > 0"
-                            class="mt-8 flex w-full flex-wrap justify-start gap-2"
-                        >
-                            <template
-                                v-for="(item, id) in project.highlights"
-                                :key="id"
-                            >
-                                <chip-base
-                                    :text="
-                                        $t(
-                                            `curriculumResume.projects[${index}].highlights[${id}]`,
-                                        )
-                                    "
-                                    :size="Size.medium"
-                                />
-                            </template>
-                        </div>
-                    </div>
-                </template>
+                <div
+                    v-for="(project, index) in projects"
+                    :key="index"
+                    class="flex cursor-pointer flex-col rounded-xl border border-solid border-base-content p-5 text-base-content hover:bg-base-content hover:text-base-100 hover:shadow-lg"
+                    :class="{
+                        'md:col-span-2': formatCol2.includes(index),
+                    }"
+                >
+                    <project-card :project="project" :index="index" />
+                </div>
             </div>
         </article>
     </section>
