@@ -5,6 +5,7 @@ import LogoJS from "~/components/UI/ProfileCard/icons/LogoJS.vue";
 import LogoNuxt from "~/components/UI/ProfileCard/icons/LogoNuxt.vue";
 import LogoNode from "~/components/UI/ProfileCard/icons/LogoNode.vue";
 import AvatarProfile from "~/components/UI/ProfileCard/AvatarProfile.vue";
+import LogoVue from "~/components/UI/ProfileCard/icons/LogoVue.vue";
 </script>
 
 <template>
@@ -27,6 +28,7 @@ import AvatarProfile from "~/components/UI/ProfileCard/AvatarProfile.vue";
             <logo-h-t-m-l class="w-8" />
             <logo-c-s-s class="w-8" />
             <logo-j-s class="w-8" />
+            <logo-vue class="w-10" />
             <logo-nuxt class="w-10" />
             <logo-node class="w-10" />
         </div>

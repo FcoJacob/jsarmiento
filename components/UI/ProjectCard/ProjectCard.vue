@@ -30,7 +30,8 @@ defineProps<{
         >
             <div :class="{ 'w-full': !isCol2, 'w-1/2': isCol2 }">
                 <nuxt-img
-                    proload
+                    preload
+                    loading="lazy"
                     class="rounded-lg"
                     :src="project.urlImg"
                     :alt="project.name"
