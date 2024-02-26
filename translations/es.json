@@ -14,6 +14,10 @@
 		"ariaLabels": {
 			"changeLanguage": "Cambiar idioma",
 			"changeTheme": "Cambiar tema"
+		},
+		"projectCard": {
+			"currentState": "Estado actual",
+			"completionYear": "Año de finalización"
 		}
 	},
 	"curriculumResume": {
@@ -24,7 +28,7 @@
 			"email": "fco.j.sarmientoperez",
 			"phone": "+34 696 124 038",
 			"url": "https://jsarmiento.dev",
-			"summary": "6 años como  desarrollador de Frontend, con experiencia en el desarrollo de aplicaciones web y móviles. Me gusta trabajar en equipo y aprender nuevas tecnologías. Me considero una persona proactiva, responsable y con capacidad para ayudar a resolver problemas.",
+			"summary": "Seis años como desarrollador de aplicaciones web. Me gusta trabajar en equipo y aprender nuevas tecnologías. Me considero una persona proactiva, responsable y con capacidad para ayudar a resolver problemas.",
 			"location": {
 				"address": "Calle Del Canario, 34, Agüimes",
 				"postalCode": "35269",
@@ -63,7 +67,7 @@
 				"url": "https://www.domingoalonsogroup.com/es/empresas/aida",
 				"startDate": "2023-03-06",
 				"endDate": "Actualmente",
-				"summary": "Desarrollador en el equipo de frontend, con tecnologías como Vue, entre otras.",
+				"summary": "En mi etapa actual desarrollo software para esta compañía del sector de la automoción, en ella he continuado trabajando con tecnologías como Vue, Vuetify, TailwindCSS, Azure cloud, Figma, Storybook, entre otras. Y estoy aprendiendo a trabajar con C# y .Net.",
 				"highlights": [
 					"Vue",
 					"Vuetify",
@@ -80,7 +84,7 @@
 				"url": "https://www.progrentis.com/",
 				"startDate": "2020-07-01",
 				"endDate": "2024-02-01",
-				"summary": "Desarrollo de aplicaciones web, con tecnologías como Vue, Node, entre otras.",
+				"summary": "Durante mi etapa en Progrentis, he trabajado en el desarrollo de aplicaciones web para aplicaciones de aprendizaje escolares exactamente en el area de matemáticas, con tecnologías como Vue, TailwindCSS, Figma, Phaser, entre otras. He desarrollado actividades de aprendizaje para niños/as desde los 8 hasta los 16 años de edad.",
 				"highlights": [
 					"Vue",
 					"TailwindCSS",
@@ -95,10 +99,8 @@
 				"url": "--",
 				"startDate": "2018-06-25",
 				"endDate": "2024-05-01",
-				"summary": "Desarrollo de aplicaciones web y móviles, con tecnologías como NuxtJs, Vue, Node, Express, Firebase, entre otras.",
-				"highlights": [
-					"Started the company"
-				]
+				"summary": "He estado trabajando en proyectos de todo tipo, desde el trato con clientes para ofrecerles mis servicios haste el desarrollo de infraestructuras de aplicaciones web, con tecnologías como Vue, Nuxt, TailwindCSS, Figma, Firebase, entre otras. Brindando soluciones a las necesidades de cada cliente.",
+				"highlights": []
 			},
 			{
 				"name": "Ejercito del Aire",
@@ -108,9 +110,7 @@
 				"startDate": "2007-12-10",
 				"endDate": "Excedencia",
 				"summary": "Realizo diversas tareas de mantenimiento en cazas de combate y operaciones en tierra.",
-				"highlights": [
-					"Started the company"
-				]
+				"highlights": []
 			},
 			{
 				"name": "Armada Española",
@@ -119,10 +119,8 @@
 				"url": "https://armada.defensa.gob.es/ArmadaPortal/page/Portal/ArmadaEspannola/iniciohome/prefLang-es/",
 				"startDate": "2004-12-10",
 				"endDate": "2006-12-10",
-				"summary": "Más de 260 horas de mar, y campañas de control de pesca, defensa de aguas nacionales y servicios de marinero de puente, se manejar zodiac con motor de turbina y realizar maniobras en alta mar con helicópteros, de salvamento o carga de paquetes.",
-				"highlights": [
-					"Started the company"
-				]
+				"summary": "Más de 260 horas de mar, con actividades como campañas de control de pesca, defensa de aguas nacionales y servicios de marinero de puente, se manejar embarcaciones con motor de turbina y realizar maniobras en alta mar con helicópteros, de salvamento o carga de paquetes.",
+				"highlights": []
 			},
 			{
 				"name": "Ejercito de Tierra",
@@ -132,9 +130,7 @@
 				"startDate": "2000-12-10",
 				"endDate": "2004-08-01",
 				"summary": "Realizaciones de operaciones de combate y operaciones en tierra. Así como servicios de Guardia y Ofimática.",
-				"highlights": [
-					"Started the company"
-				]
+				"highlights": []
 			}
 		],
 		"volunteer": [],
@@ -293,7 +289,7 @@
 					"PWA"
 				],
 				"url": "https://jairadeana.web.app/",
-				"urlImg": "/projects/lajairadeana.png"
+				"urlImg": "lajairadeana"
 			},
 			{
 				"name": "DO EL Hierro",
@@ -307,7 +303,7 @@
 					"PWA"
 				],
 				"url": "https://doelhierro.es/",
-				"urlImg": "/projects/doelhierro.png"
+				"urlImg": "doelhierro"
 			},
 			{
 				"name": "Foro eBC",
@@ -320,7 +316,7 @@
 					"PWA"
 				],
 				"url": "https://foroebc.org/",
-				"urlImg": "/projects/foroebc.png"
+				"urlImg": "foroebc"
 			},
 			{
 				"name": "Torino autocasión",
@@ -334,7 +330,7 @@
 					"PWA"
 				],
 				"url": "https://torino-compra-ve-1551062535061.web.app/",
-				"urlImg": "/projects/torinoautocasion.png"
+				"urlImg": "torinoautocasion"
 			},
 			{
 				"name": "Business Evolver",
@@ -348,7 +344,7 @@
 					"PWA"
 				],
 				"url": "https://business-evolver.web.app/",
-				"urlImg": "/projects/businessevolver.png"
+				"urlImg": "businessevolver"
 			},
 			{
 				"name": "Wave 2 EW",
@@ -362,7 +358,7 @@
 					"PWA"
 				],
 				"url": "https://wave2ew.web.app/",
-				"urlImg": "/projects/wave2ew.png"
+				"urlImg": "wave2ew"
 			},
 			{
 				"name": "+QHuellas",
@@ -376,7 +372,7 @@
 					"PWA"
 				],
 				"url": "https://masquehuellas.com/",
-				"urlImg": "/projects/mqhuellas.png"
+				"urlImg": "mqhuellas"
 			},
 			{
 				"name": "Frutería Víntage",
@@ -390,7 +386,7 @@
 					"PWA"
 				],
 				"url": "https://fruteriavintage.web.app/",
-				"urlImg": "/projects/fruteriavintage.png"
+				"urlImg": "fruteriavintage"
 			}
 		]
 	}
