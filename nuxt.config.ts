@@ -50,6 +50,7 @@ export default defineNuxtConfig({
         lazy: true,
     },
     image: {
+        dir: "assets/img",
         quality: 100,
     },
     nitro: {
